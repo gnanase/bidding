@@ -26,39 +26,39 @@
 		                	<div class="box-body">
 		                    	<div class="form-group">
 		                      	<label for="exampleInputname">Product Name </label>
-		                      	<input type="text" class="form-control required" value="<?php if(set_value('name')) echo set_value('name'); else echo $product_details['name'];  ?>"  disabled>
+		                      	<input type="text" class="form-control required" value="<?php  echo $product_details['name'];  ?>"  disabled>
 		                      	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputcode">Product Code </label>
-		                    	<input type="text" class="form-control required"  value="<?php if(set_value('code')) echo set_value('code'); else echo $product_details['code'];  ?>" disabled>
+		                    	<input type="text" class="form-control required"  value="<?php  echo $product_details['code'];  ?>" disabled>
 		                    	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputdesc">Description </label>
-		                    	<textarea rows="5" cols="10"  class="form-control required desc" disabled><?php  if(set_value('desc')) echo set_value('desc'); else echo $product_details['desc']; ?></textarea>
+		                    	<textarea rows="5" cols="10"  class="form-control required desc" disabled><?php   echo $product_details['desc']; ?></textarea>
 		                    	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputmin_price">Price </label>
-		                    	<input type="text" class="form-control"  value="<?php if(set_value('price')) echo set_value('price'); else echo $product_details['price']; ?>" disabled>
+		                    	<input type="text" class="form-control"  value="<?php echo $product_details['price']; ?>" disabled>
 		                    	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputPassword1">Mininum Price </label>
-		                    	<input type="text"  class="form-control required"  value="<?php if(set_value('min_price')) echo set_value('min_price'); else echo $product_details['min_price'];  ?>" disabled>
+		                    	<input type="text"  class="form-control required"  value="<?php echo $product_details['min_price'];  ?>" disabled>
 		                    	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputbid_fee">Bid Fee </label>
-		                    	<input type="text"  class="form-control required"  value="<?php if(set_value('bid_fee')) echo set_value('bid_fee'); else echo $product_details['bid_fee']; ?>" disabled>
+		                    	<input type="text"  class="form-control required"  value="<?php echo $product_details['bid_fee']; ?>" disabled>
 		                    	
 		                    </div>
 		                    <div class="form-group">
 		                    	<label for="exampleInputEmail1">Status </label>
 		                    	<select class="form-control" disabled>
-		                    		<option value="1" <?php if(isset($_POST['status']) && $_POST['status']==1) echo 'selected';  else if ($product_details['status']==1) echo 'selected'; ?>>Active</option>
-		                    		<option value="0" <?php if(isset($_POST['status']) && $_POST['status']==1) echo 'selected';  else if ($product_details['status']==1) echo 'selected'; ?>>Inactive</option>
+		                    		<option value="1" <?php if ($product_details['status']==1) echo 'selected'; ?>>Active</option>
+		                    		<option value="0" <?php if ($product_details['status']==1) echo 'selected'; ?>>Inactive</option>
 		                    	</select>
 		                    </div>  
 		                    <div class="form-group">
@@ -71,7 +71,7 @@
 			                      <div class="input-group-addon">
 			                        <i class="fa fa-clock-o"></i>
 			                      </div>
-			                      <input type="text" value="<?php if(set_value('intervel')) echo set_value('intervel'); else echo $product_details['start_date'].'-'.$product_details['end_date']; ?>" class="form-control pull-right datepick" disabled style="float: left !important">
+			                      <input type="text" value="<?php echo $product_details['start_date'].'-'.$product_details['end_date']; ?>" class="form-control pull-right datepick" disabled style="float: left !important">
 			                    </div>
 			                </div>	      	
 		                  </div>

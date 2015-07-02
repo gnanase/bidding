@@ -32,6 +32,7 @@
                   			<table id="example2" class="table table-bordered table-hover">
                     			<thead>
                       				<tr align="center">
+                      					<th style="text-align: center !important;"> S.No</th>
 	                        			<th style="text-align: center !important;"> User Name</th>
 	                        			<th style="text-align: center !important;">Email</th>
 	                        			<th style="text-align: center !important;">Phone</th>
@@ -50,6 +51,7 @@
 										$i += 1;
 									?>
 				                    <tr align="center">
+				                    	<td><?php echo $i; ?></td>
 				                    	<td><?php echo wordwrap($details['name'],25,"<br>\n",TRUE); ?></td>
 				                        <td><?php echo wordwrap($details['email'],25,"<br>\n",TRUE); ?></td>
 				                        <td><?php echo wordwrap($details['phone'],25,"<br>\n",TRUE); ?></td>
