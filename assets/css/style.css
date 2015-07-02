@@ -1,0 +1,7 @@
+.error{ color: #dd4b39 !important;}
+.middle{width:320px; margin:0 auto; text-align:center;}
+th ,td{ text-align:center !important; height:20px; border-color:#D2D6DE; }
+.state-error{ color: #dd4b39 !important; display: block; margin-top: -13px; margin-bottom: 13px;}
+.datepick{  width: 450px !important; float: left !important;}
+.datepick-div em.state-error{ margin-top: -3px !important; }
+.prodImg{  width: 150px; margin: 10px; }
